@@ -44,7 +44,7 @@ int main(int argc, char **argv){
     }
 
     if(len>=lenmax-1){
-      printf("docter stop.\n");
+      printf("doctor stop.\n");
       break;
     }
   }
@@ -65,11 +65,11 @@ static void print_array(int d[], int len){
 }
 static void print_help(void){
   printf("Usage: ack [a0] [a1] ...\n");
-  printf("ack calculates A(a0,A(a1, ... A(ak-1, ak)))...) step by step until the value is calculated as a natural number.\n");
-  printf("A(x,y) is the Péter's Ackermann function [1]. Which can be represented as the followings:\n");
+  printf("ack calculates A(a0,A(a1, ... A(ak-1, ak)))...) step by step until the value is returned as a natural number.\n");
+  printf("A(x,y) is the Péter's Ackermann function [1]. It can be calculated with the following rules:\n");
   printf("  A(0  ,y  ) = y+1           (for all y)\n");
-  printf("  A(x+1,0  ) = A(x,1)        (for all x>0)\n");
-  printf("  A(x+1,y+1) = A(x,A(x+1,y)) (for all x>0 and y>0)\n");
+  printf("  A(x+1,0  ) = A(x,1)        (for all x)\n");
+  printf("  A(x+1,y+1) = A(x,A(x+1,y)) (for all x and y)\n");
   printf("\n");
   printf("Example: ack 1 1\n");
   printf("[1,1]\n");
