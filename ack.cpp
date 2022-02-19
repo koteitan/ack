@@ -70,6 +70,20 @@ static void print_help(void){
   printf("  A(0  ,y  ) = y+1           (for all y)\n");
   printf("  A(x+1,0  ) = A(x,1)        (for all x>0)\n");
   printf("  A(x+1,y+1) = A(x,A(x+1,y)) (for all x>0 and y>0)\n");
+  printf("\n");
+  printf("Example: ack 1 1\n");
+  printf("[1,1]\n");
+  printf("[0,1,0]\n");
+  printf("[0,0,1]\n");
+  printf("[0,2]\n");
+  printf("[3]\n");
+  printf("That means:\n");
+  printf(" A(1,1)\n");
+  printf("=A(0,A(1,0))\n");
+  printf("=A(0,A(0,1))\n");
+  printf("=A(0,2)\n");
+  printf("=3.\n");
+  printf("\n");
   printf("References:\n");
   printf("  [1] Péter, R. Rekursive Funktionen in der Komputer-Theorie. Budapest: Akad. Kiado, 1951.\n");
 }
